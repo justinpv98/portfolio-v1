@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-neutral-100);
+  border: none;
+  cursor: pointer;
+
+}
+
+.button--filled {
+  background: linear-gradient(180deg, #2788ff 0%, #1f50cc 100%);
+  box-shadow: 0px 4px 8px rgba(0, 80, 177, 0.4);
+  border-radius: 164px;
+  margin-right: 1rem;
+}
+
+.button--outlined {
+  border: 1px solid #e1f3ff;
+  border-radius: 164px;
+  background: transparent;
+  margin-top: 1rem;
+}
+
+.button--icon {
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button--large {
+  font-size: var(--fs-500);
+}
+
+.button--filled.button--large {
+  box-shadow: 0px 8px 16px rgba(0, 80, 177, 0.4);
+}

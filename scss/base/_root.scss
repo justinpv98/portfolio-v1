@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+:root {
+  /* Color loops */
+  @each $color-type, $shades in $colors {
+    @each $weight, $color in $shades {
+      --color-#{$color-type}-#{$weight}: #{$color};
+    }
+  }
+
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == medium {
+      @each $scale, $value in $font-size {
+        --fs-#{$scale}: #{$value};
+      }
+    } @else {
+      @include mq(medium) {
+        @each $scale, $value in $font-size {
+          --fs-#{$scale}: #{$value};
+        }
+      }
+    }
+  }
+
+  /* Simple usage variables */
+
+  --max-width: 74.375rem;
+
+  --ff-primary: "Palanquin", sans-serif;
+  --ff-secondary: "Palanquin Dark", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-display: var(--ff-secondary);
+
+  --color-text: var(--color-neutral-100);
+  --color-text-light: var(--color-neutral-300);
+  --color-background: var(--color-neutral-900);
+
+  --animation-slow: 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+  --animation-normal: 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+  --animation-fast: 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-neutral-100);
+}

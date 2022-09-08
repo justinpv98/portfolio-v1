@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="application-name" content="Justin Virella">
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+   <title>Justin Virella | Web Developer, Designer, Maker</title>
+   <meta name="description"
+      content="Hire a web developer focused on designing simple website solutions to complex problems." />
+   <meta name="author" content="Justin Virella" />
+   <link rel="canonical" href="https://www.justinvirella.com/">
+   <meta property="og:locale" content="en_US">
+   <meta property="og:title" content="Justin Virella | Web Developer, Designer, Maker.">
+   <meta property="og:description"
+      content="Hire a web developer focused on designing simple website solutions to complex problems.">
+   <meta property="og:url" content="https://www.justinvirella.com/">
+   <meta property="og:site_name" content="Justin Virella | Web Developer, Designer, Maker">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico?">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="dns-prefetch" href="//fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@500&family=Palanquin:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+   <header class="header" id="header">
+      <div class="header__container">
+         <a href="#main" class="skiplink button--filled">Skip To Content</a>
+         <a href="#" class="header__logo" id="logo">
+            <img src="./assets/logo.svg" alt="Portfolio Home" class="header__logo__branding">
+         </a>
+         <button id="hamburger-menu" class="hamburger-menu button--icon" aria-label="open menu" aria-expanded="false"
+            aria-controls="nav">
+            <img src="./assets/hamburger.svg" alt="" aria-hidden="true" />
+         </button>
+         <nav class="nav" id="nav" aria-labelledby="menu-label">
+            <button id="close-hamburger-menu" class="close-hamburger-menu button--icon" aria-label="close menu"
+               aria-expanded="true" aria-controls="nav">
+               <img src="./assets/close.svg" alt="" aria-hidden="true" />
+            </button>
+            <ul class="nav__list">
+               <li class="nav__item" role="presentation">
+                  <a href="#about" class="nav__link is-active">About</a>
+               </li>
+               <li class="nav__item" role="presentation">
+                  <a href="#projects" class="nav__link"">Work</a>
+               </li>
+               <li class=" nav__item" role="presentation">
+                     <a href="#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+            <div class="socials socials--mobile">
+               <a href="https://github.com/justinpv98" target="_blank" aria-label="Github">
+                  <svg class="socials__icon" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24">
+                     <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27">
+                     </path>
+                  </svg>
+               </a>
+            </div>
+         </nav>
+         <div class="socials" >
+            <a href="https://github.com/justinpv98" aria-label="Github" target="_blank">
+               <svg class="socials__icon" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24">
+                  <path
+                     d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27">
+                  </path>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </header>
+   <main class="main" id="main">
+      <h1 class="main__heading display"><span class="main__heading-intro">Hello there,</span><br />
+         I'm <span class="main__heading-name">Justin Virella. </span> <br /> I build digital experiences.
+      </h1>
+      <p class="main__copy">I’m a software engineer interested in turning complex web ideas into simple, results-driven
+         experiences.
+      </p>
+      <div class="main__buttons">
+         <a href="#projects" class="button button--filled button--large">See My Work</a href="#">
+         <a href="#contact" class="button button--outlined button--large">Get In Touch</a href="#">
+      </div>
+   </main>
+   <section class="about" id="about">
+      <h2 class="about__heading">About</h2>
+      <div class="about__container">
+         <ul class="about__cards">
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/accessibility.svg" aria-hidden="true" />
+                  <p class="card__body">Accessibility</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/css3.svg" aria-hidden="true" />
+                  <p class="card__body">HTML/CSS</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg javascript-logo" alt="" src="./assets/logos/js.svg" aria-hidden="true" />
+                  <p class="card__body">Javascript</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/nodejs.svg" aria-hidden="true" />
+                  <p class="card__body">Node.js</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg sass-logo" alt="" src="./assets/logos/sass.svg" aria-hidden="true" />
+                  <p class="card__body">Sass</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/react.svg" aria-hidden="true" />
+                  <p class="card__body">React</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/postgres.svg" aria-hidden="true" />
+                  <p class="card__body">PostgreSQL</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/figma.svg" aria-hidden="true" />
+                  <p class="card__body">Figma</p>
+               </div>
+            </li>
+            <li class="card-wrapper">
+               <div class="card">
+                  <img class="card__svg" alt="" src="./assets/logos/jest.png" aria-hidden="true" />
+                  <p class="card__body">Jest</p>
+               </div>
+            </li>
+         </ul>
+         <div class="about__copy">
+            <p class="about__text">
+               Hi. My name is Justin and I'm a web developer who is particularly passionate about user-facing applications.
+               I like to try my hand at complex layouts, but lately I've been deepening my knowledge in good
+               accessibility practices.
+            </p>
+            <a href="#projects" class="button button--filled button--large">See My Work</a href="#">
+         </div>
+      </div>
+   </section>
+   <section class="projects" id="projects">
+      <h2 class="">Recent Projects</h2>
+      <div class="projects__card-wrapper">
+         <article class="projects__card">
+            <div class="card__container">
+               <h3>Metzinger</h3>
+               <span class="card__technologies">React</span>
+               <span class="card__technologies">Redux</span>
+               <span class="card__technologies">Postgres</span>
+               <span class="card__technologies">Styled Components</span>
+               <p>Metzinger is a fully featured fullstack e-commerce application. It includes authentication, a shopping
+                  cart, a transaction system, and a wishlist.</p>
+               <div>
+                  <a href="projects/metzinger" class="button button--filled">View Project</a href="#">
+                  <a href="https://github.com/justinpv98/metzinger-ecommerce" class="button button--outlined">View
+                     Repo</a href="#">
+               </div>
+            </div>
+         </article>
+         <div class="card__image">
+            <img src="./assets/metzinger.webp" alt="">
+         </div>
+      </div>
+      <div class="projects__card-wrapper">
+         <article class="projects__card">
+            <div class="card__container">
+               <h3>Cnema</h3>
+               <span class="card__technologies">React</span>
+               <span class="card__technologies">React Query</span>
+               <span class="card__technologies">SASS</span>
+               <span class="card__technologies">Context API</span>
+               <p>Cnema is a movie library application that allows user to search for their favorite movies, watch
+                  trailers, see recommended movies, and add the movies to a watchlist. </p>
+               <div>
+                  <a href="projects/cnema" class="button button--filled">View Project</a href="#">
+                  <a href="https://github.com/justinpv98/cnema" target="_blank" class="button button--outlined">View
+                     Repo</a href="#">
+               </div>
+            </div>
+         </article>
+         <div class="card__image">
+            <img src="./assets/cnema.webp" alt="">
+         </div>
+      </div>
+      <div class="projects__card-wrapper">
+         <article class="projects__card">
+            <div class="card__container">
+               <h3>Roomsy</h3>
+               <span class="card__technologies">React</span>
+               <span class="card__technologies">SASS</span>
+               <span class="card__technologies">Cloudinary API</span>
+               <p>Roomsy is a simple landing page for a vacation rental service that includes complex CSS layouts while
+                  remaining responsive in design. </p>
+               <div>
+                  <a href="projects/roomsy" class="button button--filled">View Project</a href="#">
+                  <a href="https://github.com/justinpv98/roomsy" target="_blank" class="button button--outlined">View
+                     Repo</a href="#">
+               </div>
+            </div>
+         </article>
+         <div class="card__image">
+            <img src="./assets/roomsy.webp" alt="">
+         </div>
+      </div>
+   </section>
+   <section class="contact" id="contact">
+      <h2 class="contact__header">Contact</h2>
+      <div class="contact__form-wrapper">
+         <form action="https://usebasin.com/f/af36f6dc4b3c" method="POST" class="contact__form">
+            <label for="name" class="form__label">Name</label>
+            <input type="text" id="name" autocomplete="name" name="name" class="form__input" required>
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" autocomplete="email" name="email "email class="form__input" required>
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" class="form__message" name="message" size="500" required></textarea>
+            <input type="submit" id="submit-form" value="Send A Message" class="button button--filled">
+         </form>
+      </div>
+   </section>
+   <script src="./js/main.js"></script>
+</body>
+
+</html>

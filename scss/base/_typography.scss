@@ -1,0 +1,109 @@
+@use "../abstracts" as *;
+
+::selection {
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-100);
+}
+
+body {
+  font-family: var(--ff-body);
+  color: var(--color-neutral-100);
+}
+
+p {
+  color: var(--color-neutral-300);
+}
+
+a {
+  color: inherit;
+}
+
+// Font families
+
+.display {
+    font-family: var(--ff-display);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-body);
+}
+
+// Font weights
+
+.display,
+.text-sm {
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+// Font sizes
+
+.display {
+  font-size: var(--fs-800);
+
+  @include mq(medium){
+    font-size: var(--fs-900);
+  }
+}
+
+h1,
+.h1 {
+  font-size: var(--fs-800);
+}
+
+h2,
+.h2 {
+  font-size: var(--fs-700);
+}
+
+h3,
+.h3 {
+  font-size: var(--fs-600);
+}
+
+h4,
+.h4 {
+  font-size: calc(var(--fs-400) * 1.125);
+}
+
+h5,
+.h5 {
+  font-size: var(--fs-400);
+}
+
+h6,
+.h6 {
+  font-size: calc(var(--fs-400) / 1.125);
+}
+
+small,
+.text-small {
+  font-size: var(--fs-300);
+}
+
+.text-xs {
+  font-size: var(--fs-200);
+}
+
+p,
+ul,
+li {
+  max-width: 60ch;
+}

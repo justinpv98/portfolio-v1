@@ -1,0 +1,312 @@
+@use "../abstracts" as *;
+
+
+.main {
+  max-width: var(--max-width);
+  padding: 0 1.25rem;
+  margin: 2.5rem auto;
+
+  margin-top: 8rem;
+
+  @include mq(medium){
+    margin-top: 7rem;
+    padding: 0 2rem;
+  }
+
+
+  @include mq(large){
+    margin-top: 6rem;
+  }
+}
+
+.main__heading {
+  margin-bottom: 2rem;
+
+  &-intro {
+    font-size: 1.75rem;
+  }
+
+  &-name {
+    color: var(--color-primary-500);
+  }
+}
+
+.main__copy {
+  font-size: calc(var(--fs-500) / 1.125);
+  max-width: 50rem;
+  margin-bottom: 2rem;
+
+  @include mq(medium){
+    font-size: var(--fs-500);
+  }
+}
+
+.main__buttons {
+  .button {
+    margin-right: 1rem;
+  }
+}
+
+
+
+.about,
+.projects,
+.contact {
+  max-width: var(--max-width);
+  margin: 6.25rem auto 0 auto;
+  padding: 0 1.25rem;
+
+
+  @include mq(medium){
+    margin-top: 14rem;
+    padding: 0 2rem;
+  }
+
+
+  &__heading {
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include pseudo(after) {
+      left: 0;
+      height: 500px;
+      width: 500px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 50%;
+      display: none;
+    }
+  }
+}
+
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+
+  @media (min-width: 1150px){
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+}
+
+.about__cards {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(8.5rem, 100%), 1fr));
+  list-style: none;
+  gap: 1rem;
+
+  
+  @include mq(medium){
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+  }
+
+  @include mq(large){
+    max-width: 620px;
+  }
+
+
+  p {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.about__copy {
+
+  margin: 1rem 0;
+
+
+  @include mq(medium){
+
+    font-size: 20px;
+    max-width: 100%;
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+  
+  }
+
+  @include mq(large){
+    max-width: 30rem;
+    margin: 0;
+  }
+}
+
+.about__text {
+  margin-bottom: 2rem;
+}
+
+.projects {
+  &__card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #0a0b12;
+    border-radius: 4px;
+  }
+}
+
+.projects__card-wrapper {
+  background: linear-gradient(180deg, rgba(68, 84, 126, 0.6) 0%, #02040a 100%);
+  width: 100%;
+  padding: 1px;
+  border-radius: 4px;
+  margin: 4rem 0;
+  position: relative;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+
+  @media (min-width: 1150px){
+    flex-direction: row;
+  }
+
+  
+}
+
+.projects__card {
+  position: relative;
+  border-radius: 4px;
+  background: radial-gradient(
+    67.6% 50.45% at 50.29% 0%,
+    #181d2c 0%,
+    #0a0b12 100%
+  );
+
+  @include mq(large){
+    min-height: 400px;
+  }
+
+  @include pseudo(after) {
+    z-index: -1;
+    background: #0a0b12;
+  }
+
+  @include pseudo(before) {
+    background: linear-gradient(180deg, #090b12 -26.58%, #0a0b12 26.58%);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  
+}
+
+.card__container {
+  position: relative;
+  z-index: 4;
+  padding: 2rem 1rem;
+  
+  p {
+    margin: 1rem 0 3rem 0;
+  }
+
+  @include mq(medium){
+    padding: 3rem 2rem;
+  }
+
+  @include mq(large){
+    padding: 5rem 4.5rem;
+    width: 60ch;
+  }
+}
+
+.card__image {
+  background-color: var(--color-neutral-500);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  object-fit: fill;
+
+  @media (min-width: 1150px){
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    right: -30px;
+    top: 20px;
+    object-fit: cover;
+  }
+
+
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+  }
+}
+
+
+.contact {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.contact__header {
+  margin-bottom: 2rem;
+}
+
+.contact__form-wrapper {
+  background: linear-gradient(180deg, rgba(68, 84, 126, 0.6) 0%, #02040a 100%);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+.contact__form {
+
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: left;
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 4px;
+  background: radial-gradient(
+    67.6% 50.45% at 50.29% 0%,
+    #181d2c 0%,
+    #0a0b12 100%
+  );
+
+  input[type="submit"] {
+    margin-top: 1rem;
+  }
+}
+
+.form__label:not(first-of-type){
+  margin-top:.5rem;
+  margin-bottom: .5rem;
+}
+
+.form__input, .form__message{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--color-neutral-100);
+  margin-bottom: .5rem;
+  resize: none;
+  padding: .5rem;
+}
+
+.form__message {
+  min-height: 7rem;
+}
+
+.card__technologies {
+  display: inline-block;
+  line-height: 1;
+  border-radius: 50px;
+  margin-right: .5rem;
+  
+}

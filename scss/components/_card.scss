@@ -1,0 +1,118 @@
+@use '../abstracts' as *;
+
+.card {
+  position: relative;
+  background: radial-gradient(
+    67.6% 50.45% at 50.29% 0%,
+    #181d2c 0%,
+    #0a0b12 100%
+  );
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 4px;
+  overflow: hidden;
+
+  @include mq(medium){
+    font-size: 26px;
+  }
+  
+
+  &__body {
+      color: var(--color-neutral-100);
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    transform: translateY(-50%);
+    filter: saturate(0%);
+    opacity: .05;
+    height: 6.5rem;
+    width: 6.5rem;
+    pointer-events: none;
+    user-select: none;
+
+    @include mq(medium){
+      height: 8rem;
+      width: 8rem;
+    }
+
+    @include mq(large){
+      height: 6.5rem;
+      width: 6.5rem;
+    }
+  }
+
+  & > .sass-logo {
+    height: 8rem;
+    width: 8rem;
+
+    @include mq(medium){
+      height: 10rem;
+      width: 10rem;
+    }
+
+    @include mq(large){
+      height: 8rem;
+      width: 8rem;
+    }
+  }
+
+  & > .javascript-logo {
+      filter: saturate(0%) brightness(.5);
+      height: 6.25rem;
+      width: 6.25rem;
+
+      @include mq(medium){
+        height: 8rem;
+        width: 8rem;
+      }
+
+      @include mq(large){
+        height: 6.25rem;
+        width: 6.25rem;
+      }
+  }
+
+  @include pseudo(after) {
+    z-index: -1;
+    background: #0a0b12;
+  }
+
+  @include pseudo(before) {
+    background: linear-gradient(180deg, #090b12 -26.58%, #0a0b12 26.58%);
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+
+  &-wrapper {
+    background: linear-gradient(
+      180deg,
+      rgba(68, 84, 126, 0.6) 0%,
+      #02040a 100%
+    );
+    padding: 1px;
+    height: 112px;
+    border-radius: 4px;
+
+    @include mq(medium){
+        height: 140px
+    }
+
+    @include mq(large) {
+      height: 112px;
+      width: 176px;
+    }
+  }
+}
+
+.button--filled {
+  margin-right: 1rem;
+}
