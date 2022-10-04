@@ -9,7 +9,7 @@ This is my current portfolio page. Just a simple site built with HTML, Sass, and
 ### Table of Contents
 
 - [About the Project](#about)
-  - [Technologies](#technologies))
+  - [Technologies](#technologies)
 - [Screenshots](#screenshots)
 - [Getting Started](#getting_started)
   - [Installation](#installation)
